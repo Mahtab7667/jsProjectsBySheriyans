@@ -1,0 +1,70 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+/* start writing your manual css code from here*/
+body{
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    height: 420px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.storiyan{
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #dadada;
+    padding: 15px;
+    white-space: nowrap;
+    /*1. to prevent wrap after making inlineblock from block element */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none; 
+    /*2. to make x-scrollbar invisible in firefox we can use above code */
+}
+
+/* .storiyan::-webkit-scrollbar{
+    display: none; to make x-scrollbar invisible in chrome we can use this code
+} */
+
+
+.story{
+    height: 90px;
+    width: 90px;
+    border: 3px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.full-screen{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
